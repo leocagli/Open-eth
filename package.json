@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.0",
-    "@uniswap/v4-core": "^0.0.1-alpha"
+    "@uniswap/v4-core": "^1.0.0"
   },
   "engines": {
     "node": ">=18.0.0",

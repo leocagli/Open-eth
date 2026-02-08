@@ -11,6 +11,7 @@ coverage/
 cache/
 artifacts/
 typechain-types/
+deployments/
 
 # Next.js
 .next/
@@ -18,12 +19,24 @@ out/
 build/
 dist/
 
-# Misc
-.DS_Store
+# Production
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
 .env
 .env.local
-.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Misc
+.DS_Store
+*.pem
 
 # IDE
 .vscode/
@@ -31,6 +44,15 @@ dist/
 *.swp
 *.swo
 *~
+.project
+.classpath
+.settings/
 
 # Build artifacts
 *.tsbuildinfo
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
