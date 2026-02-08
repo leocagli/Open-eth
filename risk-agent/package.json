@@ -1,0 +1,13 @@
+{
+  "name": "risk-agent",
+  "version": "0.1.0",
+  "description": "Risk management agent for Open-eth",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["risk", "agent", "defi"],
+  "author": "Open-eth Contributors",
+  "license": "MIT"
+}

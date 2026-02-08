@@ -1,0 +1,13 @@
+{
+  "name": "router-agent",
+  "version": "0.1.0",
+  "description": "Router agent for Open-eth transaction routing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["router", "agent", "defi"],
+  "author": "Open-eth Contributors",
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "agents",
+  "version": "0.1.0",
+  "description": "Autonomous agents for Open-eth",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["agents", "automation"],
+  "author": "Open-eth Contributors",
+  "license": "MIT"
+}
