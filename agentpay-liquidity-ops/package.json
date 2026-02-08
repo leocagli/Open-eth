@@ -1,0 +1,13 @@
+{
+  "name": "agentpay-liquidity-ops",
+  "version": "0.1.0",
+  "description": "Automated liquidity operation strategies for Open-eth",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["liquidity", "automation", "defi"],
+  "author": "Open-eth Contributors",
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@open-eth/identity",
+  "version": "0.1.0",
+  "description": "Identity registry module for Open-eth",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["identity", "registry"],
+  "author": "Open-eth Contributors",
+  "license": "MIT"
+}

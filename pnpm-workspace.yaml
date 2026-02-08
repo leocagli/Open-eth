@@ -1,0 +1,9 @@
+packages:
+  - 'agentpay-liquidity-ops'
+  - 'hooks'
+  - 'registries/*'
+  - 'agents'
+  - 'risk-agent'
+  - 'router-agent'
+  - 'gateway-x402'
+  - 'frontend'

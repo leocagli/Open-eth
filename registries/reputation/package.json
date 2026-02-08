@@ -1,0 +1,12 @@
+{
+  "name": "@open-eth/reputation",
+  "version": "0.1.0",
+  "description": "Reputation registry module for Open-eth",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["reputation", "registry"],
+  "author": "Open-eth Contributors",
+  "license": "MIT"
+}
