@@ -153,7 +153,7 @@ The default configuration uses Hardhat's local network:
 This project takes security seriously. All dependencies are regularly updated to patch known vulnerabilities.
 
 **Latest Security Update:** 2026-02-08
-- Updated Next.js to 14.2.35 (patched all critical vulnerabilities)
+- Updated Next.js to 15.0.8 (fully patched all critical vulnerabilities)
 - See [SECURITY.md](SECURITY.md) for details
 
 To report security issues, please see our [Security Policy](SECURITY.md).

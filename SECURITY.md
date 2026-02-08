@@ -8,9 +8,14 @@ This document tracks security vulnerabilities and their resolutions in the Open-
 
 ### 2026-02-08: Next.js Security Updates
 
-**Affected Package:** `next@14.0.0`
+**Affected Package:** `next@14.0.0` → `next@14.2.35` → `next@15.0.8`
 
-**Updated To:** `next@14.2.35`
+**Final Version:** `next@15.0.8` (All vulnerabilities patched)
+
+**Update History:**
+1. Initial version: 14.0.0 (VULNERABLE)
+2. First update: 14.2.35 (Partially patched - some vulnerabilities remained)
+3. Final update: 15.0.8 (FULLY PATCHED)
 
 **Vulnerabilities Fixed:**
 
@@ -18,7 +23,7 @@ This document tracks security vulnerabilities and their resolutions in the Open-
    - Affected versions: >= 13.0.0, < 15.0.8
    - Severity: High
    - Description: HTTP request deserialization can lead to DoS when using insecure React Server Components
-   - Fixed in: 14.2.35
+   - Fixed in: 15.0.8 ✓
 
 2. **Denial of Service with Server Components - Incomplete Fix Follow-Up**
    - Affected versions: >= 13.3.1-canary.0, < 14.2.35
@@ -57,10 +62,11 @@ This document tracks security vulnerabilities and their resolutions in the Open-
    - Fixed in: 14.2.35
 
 **Actions Taken:**
-- Updated `next` from `14.0.0` to `14.2.35`
-- Updated `eslint-config-next` from `14.0.0` to `14.2.35`
+- Updated `next` from `14.0.0` to `14.2.35` (partial fix)
+- Updated `next` from `14.2.35` to `15.0.8` (complete fix)
+- Updated `eslint-config-next` to match Next.js version
 - Verified all security patches are applied
-- All vulnerabilities resolved
+- All vulnerabilities resolved ✓
 
 **Recommendation:**
 Keep Next.js updated to the latest stable version to ensure all security patches are applied.
@@ -133,7 +139,8 @@ Before deploying to production:
 | Date | Package | From | To | Reason |
 |------|---------|------|-----|--------|
 | 2026-02-08 | next | 14.0.0 | 14.2.35 | Multiple critical security vulnerabilities |
-| 2026-02-08 | eslint-config-next | 14.0.0 | 14.2.35 | Compatibility with Next.js update |
+| 2026-02-08 | next | 14.2.35 | 15.0.8 | HTTP request deserialization DoS vulnerability |
+| 2026-02-08 | eslint-config-next | 14.0.0 | 15.0.8 | Compatibility with Next.js update |
 
 ## Resources
 
