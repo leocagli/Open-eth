@@ -8,22 +8,22 @@ This document tracks security vulnerabilities and their resolutions in the Open-
 
 ### 2026-02-08: Next.js Security Updates
 
-**Affected Package:** `next@14.0.0` → `next@14.2.35` → `next@15.0.8`
+**Affected Package:** `next` - Multiple security vulnerabilities requiring iterative updates
 
-**Final Version:** `next@15.0.8` (All vulnerabilities patched)
+**Update Timeline:**
+1. **14.0.0 → 14.2.35**: Fixed most vulnerabilities (DoS, cache poisoning, SSRF, authorization bypass)
+2. **14.2.35 → 15.0.8**: Fixed HTTP request deserialization DoS
+3. **15.0.8 → 15.5.12**: Fixed remaining DoS via cache poisoning and authorization bypass
 
-**Update History:**
-1. Initial version: 14.0.0 (VULNERABLE)
-2. First update: 14.2.35 (Partially patched - some vulnerabilities remained)
-3. Final update: 15.0.8 (FULLY PATCHED)
+**Final Version:** `next@15.5.12` (All vulnerabilities fully patched) ✅
 
-**Vulnerabilities Fixed:**
+**All Fixed Vulnerabilities:**
 
 1. **Next.js HTTP request deserialization DoS** (CVE-TBD)
    - Affected versions: >= 13.0.0, < 15.0.8
    - Severity: High
    - Description: HTTP request deserialization can lead to DoS when using insecure React Server Components
-   - Fixed in: 15.0.8 ✓
+   - Fixed in: 15.0.8, verified in 15.5.12 ✓
 
 2. **Denial of Service with Server Components - Incomplete Fix Follow-Up**
    - Affected versions: >= 13.3.1-canary.0, < 14.2.35
@@ -55,18 +55,25 @@ This document tracks security vulnerabilities and their resolutions in the Open-
    - Description: SSRF vulnerability in Server Actions
    - Fixed in: 14.2.35
 
-7. **Authorization Bypass in Next.js Middleware**
-   - Affected versions: >= 14.0.0, < 14.2.25
+7. **Authorization Bypass in Next.js Middleware** (Multiple CVEs)
+   - Affected versions: >= 15.0.0, < 15.2.3
    - Severity: Critical
-   - Description: Multiple authorization bypass issues in middleware
-   - Fixed in: 14.2.35
+   - Description: Authorization bypass vulnerabilities in middleware
+   - Fixed in: 15.2.3, verified in 15.5.12 ✓
+
+8. **DoS via Cache Poisoning**
+   - Affected versions: >= 15.0.4-canary.51, < 15.1.8
+   - Severity: High
+   - Description: Vulnerability can lead to DoS via cache poisoning
+   - Fixed in: 15.1.8, verified in 15.5.12 ✓
 
 **Actions Taken:**
-- Updated `next` from `14.0.0` to `14.2.35` (partial fix)
-- Updated `next` from `14.2.35` to `15.0.8` (complete fix)
-- Updated `eslint-config-next` to match Next.js version
+- Updated `next` from `14.0.0` to `14.2.35` (fixed most critical issues)
+- Updated `next` from `14.2.35` to `15.0.8` (fixed HTTP deserialization DoS)
+- Updated `next` from `15.0.8` to `15.5.12` (fixed cache poisoning and authorization bypass)
+- Updated `eslint-config-next` to match Next.js version (15.5.12)
 - Verified all security patches are applied
-- All vulnerabilities resolved ✓
+- **All 8+ critical vulnerabilities now completely resolved** ✓
 
 **Recommendation:**
 Keep Next.js updated to the latest stable version to ensure all security patches are applied.
@@ -140,7 +147,8 @@ Before deploying to production:
 |------|---------|------|-----|--------|
 | 2026-02-08 | next | 14.0.0 | 14.2.35 | Multiple critical security vulnerabilities |
 | 2026-02-08 | next | 14.2.35 | 15.0.8 | HTTP request deserialization DoS vulnerability |
-| 2026-02-08 | eslint-config-next | 14.0.0 | 15.0.8 | Compatibility with Next.js update |
+| 2026-02-08 | next | 15.0.8 | 15.5.12 | Cache poisoning DoS and authorization bypass |
+| 2026-02-08 | eslint-config-next | 14.0.0 | 15.5.12 | Compatibility with Next.js updates |
 
 ## Resources
 
