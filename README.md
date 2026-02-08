@@ -148,6 +148,16 @@ The default configuration uses Hardhat's local network:
 - Chain ID: 31337
 - RPC URL: http://127.0.0.1:8545
 
+## Security
+
+This project takes security seriously. All dependencies are regularly updated to patch known vulnerabilities.
+
+**Latest Security Update:** 2026-02-08
+- Updated Next.js to 14.2.35 (patched all critical vulnerabilities)
+- See [SECURITY.md](SECURITY.md) for details
+
+To report security issues, please see our [Security Policy](SECURITY.md).
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
